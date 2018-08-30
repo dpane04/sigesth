@@ -1,8 +1,8 @@
 import { Routes, RouterModule } from '@angular/router';
 
-import { HomeComponent } from "./templates/home/home.component";
-import { LoginComponent } from "./templates/login/login.component";
-import { AuthGuard } from "./scripts/guards/auth.guard";
+import { HomeComponent } from './templates/home/home.component';
+import { LoginComponent } from './templates/login/login.component';
+import { AuthGuard } from './scripts/guards/auth.guard';
 
 const appRoutes: Routes = [
     { path: '', component: HomeComponent, canActivate: [AuthGuard] },
